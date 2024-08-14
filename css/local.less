@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0em) {
     #sidebyside {
         padding: 50px 0;
+        background-color: black;
         .container {
             display: flex;
             justify-content: center;
@@ -24,9 +25,21 @@
             justify-content: center;
 
             h2 {
-                font-size: 48/16em;
+                font-size: 36/16em;
                 margin-bottom: 42/48em;
                 color: #fff;
+                display: inline-block; /* Ensure the h2 is treated as an inline-block element */
+                position: relative; /* Ensure the pseudo-element is positioned relative to the h2 */
+            }
+
+            h2::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 80%;
+                height: 2px; /* Adjust the height of the underline as needed */
+                background-color: #004883; /* Replace with the blue color you've been using */
             }
 
             p {
@@ -74,7 +87,7 @@
                     h3 {
                         font-size: 24/16em;
                         margin-bottom: 10/24em;
-                        color: var(--primary);
+                        color: #d5282b;
                     }
 
                     p {
@@ -95,29 +108,7 @@
             height: 461/16em;
             font-size:~"min(1.4vw, 1em)"; // scales the image-box down
 
-            &:before {
-                content: '';
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 90%;
-                background: white;
-                opacity: 1;
-                top: 0/16em;
-                left: -260/16em;
-            }
 
-            &:after {
-                content: '';
-                position: absolute;
-                display: block;
-                height: 516/16em;
-                width: 460/16em;
-                opacity: 1;
-                top: -226/16em;
-                right: -109/16em;
-                z-index: -1;
-             }
 
             img {
                 position: absolute;
@@ -163,15 +154,15 @@
     #sidebyside {
         padding: 150/16em 0;
         .container {
-            max-width: 1391/16em;
+            max-width: 1200/16em;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: flex-start;
         }
 
         .content {
             margin: 0;
-            width: 60%;
+            width: 80%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -186,9 +177,9 @@
                 .stat {
                     margin-right: 20/16em;
                     h3 {
-                        font-size: 28/16em;
+                        font-size: 24/16em;
                         margin-bottom: 10/24em;
-                        color: var(--primary);
+                        color: #d5282b;
                     }
 
                     p {
@@ -196,6 +187,22 @@
                     }
                 }
             }
+        }
+
+        h2 {
+            font-size: 48/16em;
+            color: #fff;
+            position: relative; /* Ensure the pseudo-element is positioned relative to the h2 */
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px; /* Adjust the height of the underline as needed */
+            background-color: #004883; /* Replace with the blue color you've been using */
         }
 
         .image-box {
@@ -483,7 +490,7 @@
 @media only screen and (min-width: 0em) {
     #sidebyside-reverse-one {
         padding: 50px 0;
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../images/banner.jpg); // Add your image path here
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../images/diesel.jpg); // Add your image path here
         background-size: cover; // Cover the entire div
         background-position: center; // Center the background image
         .container {
@@ -500,13 +507,23 @@
             max-width: 611/16em;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
 
             h2 {
-                font-size: 48/16em;
+                font-size: 36/16em;
                 margin-bottom: 42/48em;
-                color: var(--primary);
+                color: #fff;
+                position: relative; /* Ensure the pseudo-element is positioned relative to the h2 */
+            }
+            
+            h2::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 80%;
+                height: 2px; /* Adjust the height of the underline as needed */
+                background-color: #d5282b; /* Set the underline color to red */
             }
 
             p {
@@ -570,7 +587,7 @@
     #sidebyside-reverse-one {
         padding: 150/16em 0;
         .container {
-            max-width: 1391/16em;
+            max-width: 1200/16em;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
@@ -582,6 +599,14 @@
             order: 1;
             display: flex;
             align-items: flex-start;
+
+
+            h2 {
+                font-size: 48/16em;
+                margin-bottom: 42/48em;
+                color: #fff;
+                position: relative; /* Ensure the pseudo-element is positioned relative to the h2 */
+            }
 
         }
 

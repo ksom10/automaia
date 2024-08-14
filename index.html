@@ -40,6 +40,26 @@
     <link rel="stylesheet" href="./css/reviews.css">
     <link rel="stylesheet" href="./css/contact.css">
 
+
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/imp.css">
+    <link rel="stylesheet" href="./css/custom-animate.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/owl.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/hiddenbar.css">
+
+
+    <link rel="stylesheet" href="./css/color.css">
+    <link href="./css/theme-color.css" id="jssDefault" rel="stylesheet">
+    <link rel="stylesheet" href="./css/rtl.css">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
     <!--Defer loading the whole page css-->
     <link rel="stylesheet" href="./css/local.css" media="print" onload="this.media='all'; this.onload=null;">
 
@@ -48,7 +68,7 @@
         <link rel="stylesheet" href="./css/local.css">
     </noscript>
 
-    <title>Company Name | What They Do | Town and State</title>
+    <title>Auto Maia Corp | Auto Repair Services | Pompano Beach, FL</title>
 </head>
 <body>
     <!--Screen reader skip main nav-->
@@ -58,41 +78,162 @@
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
-    <div id="navigation">
-        <div aria-hidden="true" class="background-color-div">
-            <!--This div is used to overcome a z-index issue where the open
-                #navbar-menu is on top of the #navigation. This bar places itself 
-                the #navbar-menu so that menu appears behind the #navigation
-            -->
-        </div>
-        <div class="container">
-            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
-            <a class="logo" aria-label="click to go to home page" href="./index.html">
-                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-                <img class="light" aria-hidden="true" src="./images/logo.png" decoding="async" alt="logo" width="221" height="66">
+    <!-- Main header-->
+<header class="main-header header-style-one">
+    <!--Start Header Top--> 
+    <div class="header-top">
+        <div class="auto-container">
+            <div class="outer-box clearfix">
+               
+                <div class="header-top-left pull-left">
+                    <div class="logo">
+                        <a href="index.html"><img src="./images/logo.png" alt="Auto Maia Corp Logo" title=""></a>
+                    </div>
+                </div>
+                <div class="header-top-right pull-right">
+                    <div class="header-contact-info clearfix">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="icon">
+                                    <span class="flaticon-telephone thm-clr"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Call</p>
+                                    <h4><a href="tel:5557794407">(754) 235-4066</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="flaticon-email thm-clr"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Email</p>
+                                    <h4><a href="mailto:automaiacorp@gmail.com">automaiacorp@gmail.com</a></h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="flaticon-pin-1 thm-clr"></span>
+                                </div>
+                                <div class="text">
+                                    <p>Address</p>
+                                    <h4>711 S Dixie Hwy E,<br> Pompano Beach, FL 33060</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>    
+                </div> 
+                  
+            </div>
+        </div>    
+    </div> 
+    <!--End header Top-->
 
-                <!--Dark Colored Logo-->
-                <img class="dark" aria-hidden="true" src="./images/logo.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
-            </a>
-
-            <!--Main Nav-->
-            <nav id="navbar-menu">
-                <ul>
-                    <li><a class="active" href="./index.html">Home</a></li>
-                    <li><a href="./index.html#sidebyside">About Us</a></li>
-                    <li><a href="./index.html#portfolio">Projects</a></li>
-                    <li><a href="./index.html#reviews">Reviews</a></li>
-                    <li><a href="./index.html#form">Contact</a></li>
-                </ul>
-            </nav>
-
-
-            <!--Mobile Nav toggle-->
-            <button class="hamburger-menu">
-                <span aria-hidden="true"></span>
-            </button>
+    <div class="header">
+        <div class="auto-container">
+            <div class="outer-box clearfix">
+                <!--Start Header Left-->
+                <div class="header-left clearfix pull-left">
+                    <div class="nav-outer clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <div class="inner">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                        </div>
+                        <!-- Main Menu -->
+                        <nav class="main-menu style1 navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix scroll-nav">
+                                    <li><a href="#banner">Home</a></li>
+                                    <li class="dropdown"><a href="#choose">Services</a>
+                                        <ul>
+                                            <li><a href="#choose">Main Services</a></li>
+                                            <li><a href="#sidebyside-reverse-one">Diesel Truck Services</a></li>
+                                            <li><a href="#sidebyside">Insurance Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#portfolio">Our Work</a></li>
+                                    <li><a href="#form">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>                        
+                        <!-- Main Menu End-->
+                    </div>
+                    
+                </div>
+                <!--End Header Left-->
+                
+                <!--Start Header Right-->
+                <div class="header-right pull-right clearfix">
+                    <div class="header-social-link">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/p/Maia-Auto-Repair-100075880250619/?_rdr" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/automaiarepair/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                            </li>
+                            <li>
+                                <a href="https://www.yelp.com/biz/maia-auto-repair-pompano-beach" target="_blank"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <a class="btn-one style2" href="#form"><span class="txt">Get a Free Estimate</span></a>
+                    </div>
+                </div>
+                <!--End Header Right-->
+                
+            </div>  
         </div>
     </div>
+    <!--End header -->
+    
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="container">
+            <div class="clearfix">
+                <!--Logo-->
+                <div class="logo float-left">
+                    <a href="index.html" class="img-responsive"><img src="assets/images/resources/sticky-logo.png" alt="" title=""></a>
+                </div>
+                <!--Right Col-->
+                <div class="right-col float-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Sticky Header-->
+    
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="assets/images/resources/mobilemenu-logo.png" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <!--Social Links-->
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Mobile Menu --> 
+</header>
 
     <main id="main">
         <!-- ============================================ -->
@@ -102,11 +243,23 @@
         <section id="hero">
             <div class="hero-content">
                 <div class="heroText">
-                    <h1 id="home-h">Expert Auto Repairs & Maintenance in Broward County</h1>
+                    <h1 id="home-h">Expert Auto Repairs & Maintenance in Pompano Beach, FL</h1>
                     <p>
-                        Providing comprehensive auto repair services including brake repair, engine diagnostics, oil changes, and more. Proudly serving the Broward County area and surrounding neighborhoods.
+                        Providing comprehensive auto repair services including brake repair, engine diagnostics, oil changes, and more. Proudly serving the Pompano Beach area and surrounding neighborhoods.
                     </p>
-                    <a class="button-solid" href="./contact.html" target="_blank" rel="noopener">
+                    <ul class="hero-list">
+                        <li>Family-owned & operated</li>
+                        <li>Certified professionals</li>
+                        <li>Locally owned & operated</li>
+                        <li>Speak English, Spanish & Portuguese
+                            <span class="flags">
+                                <img src="./images/usa.svg" alt="English" width="24" height="16">
+                                <img src="./images/spain.svg" alt="Spanish" width="24" height="16">
+                                <img src="./images/brazil.svg" alt="Portuguese" width="24" height="16">
+                            </span>
+                        </li>
+                    </ul>
+                    <a class="button-solid" href="#form" rel="noopener">
                         Get Your Free Estimate Today!
                     </a>
                 </div>
@@ -114,54 +267,104 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="./images/landing-m.jpg">
                 <source media="(min-width: 601px)" srcset="./images/landing.jpg">
-                <img aria-hidden="true" decoding="async" src="./images/landing.jpg" alt="new home" width="275" height="132">
-             </picture>
+                <img aria-hidden="true" decoding="async" src="./images/landing.jpg" alt="auto repair services" width="275" height="132">
+            </picture>
         </section>
+        
 
 
-        <!-- ============================================ -->
-        <!--                   About                      -->
-        <!-- ============================================ -->
+       <!-- ============================================ -->
+<!--                  Why Choose Us               -->
+<!-- ============================================ -->
 
-        <section id="sidebyside" class="sidebyside">
-            <div class="container">
-                <div class="content">
-                    <h2 class="title">Trusted Auto Repair Services for Over 20 Years</h2>
-                    <p>
-                        At our auto repair shop, we pride ourselves on delivering top-notch services to keep your vehicle running smoothly. Our experienced technicians are dedicated to providing exceptional care for your car, ensuring it stays in peak condition.
-                    </p>
-                    <p>
-                        We offer a wide range of services including engine diagnostics, brake repair and maintenance, oil changes and tune-ups, transmission services, and tire services. Each service is carried out with precision and care, using quality parts and tools.
-                    </p>
+<section id="choose" class="choose">
+    <h1>Why Choose Auto Maia Repair?</h1>
+    <h4>-- Our Service List --</h4>
+    <div class="choose-container">
+    <div class="row">
+        <div class="info">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/brakes.svg" alt="Brake Services" width="48" height="48">
+            </picture>
+            <h2>Brake Services</h2>
+            <p>
+                Expert brake repair and maintenance services to keep you safe on the road.
+            </p>
+        </div>
+        <div class="info">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/engine.svg" alt="Engine Repair" width="48" height="48">
+            </picture>
+            <h2>Engine Repair</h2>
+            <p>
+                Comprehensive engine repair services to keep your car running smoothly.
+            </p>
+        </div>
+        <div class="info">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/wheel.svg" alt="Tire Rotation & Wheel Alignment" width="48" height="48">
+            </picture>
+            <h2>Tire Rotation & Wheel Alignment</h2>
+            <p>
+                Ensure even tire wear and optimal vehicle performance with our tire rotation and alignment services.
+            </p>
+        </div>
+        <div class="info">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/battery.svg" alt="Battery Services" width="48" height="48">
+            </picture>
+            <h2>Battery Services</h2>
+            <p>
+                Reliable battery testing, replacement, and maintenance services to keep your vehicle powered and running smoothly.
+            </p>
+        </div>
+        
+    </div>
+    <div class="car-image">
+        <img src="./images/car.png" alt="Car" width="400" height="800">
+    </div>
+    <div class="row">
+        <div class="info-two">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/ac.svg" alt="Air Conditioning Services" width="48" height="48">
+            </picture>
+            <h2>Air Conditioning</h2>
+            <p>
+                Stay cool with our comprehensive air conditioning repair and maintenance services.
+            </p>
+        </div>
+        <div class="info-two">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/headlights.svg" alt="Headlight & Taillight Services" width="48" height="48">
+            </picture>
+            <h2>Headlight & Taillight Services</h2>
+            <p>
+                Keep your lights bright and functional with our headlight and taillight repair services.
+            </p>
+        </div>
+        <div class="info-two">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/transmission.svg" alt="Transmission Repair or Replace" width="48" height="48">
+            </picture>
+            <h2>Transmission Repair or Replace</h2>
+            <p>
+                Expert transmission repair and replacement services to keep your vehicle running smoothly.
+            </p>
+        </div>
+        <div class="info-two">
+            <picture>
+                <img aria-hidden="true" decoding="async" src="./images/suspension.svg" alt="Suspension Services" width="48" height="48">
+            </picture>
+            <h2>Suspension Services</h2>
+            <p>
+                Comprehensive suspension repair and maintenance to ensure a smooth and safe ride.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
 
-
-                     <div class="stats">
-                        <div class="stat">
-                            <h3>20+</h3>
-                            <p>Years of Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>1000+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>421</h3>
-                            <p>Current Employees</p>
-                        </div>
-                     </div>
-
-                     <a class="button-solid" href="./about.html">More About Us</a>
-
-                     
-                     
-                </div>
-                <picture class="image-box">
-                     <source media="(max-width: 600px)" srcset="./images/car-m.png">
-                     <source media="(min-width: 601px)" srcset="./images/car.png">
-                     <img aria-hidden="true" loading="lazy" decoding="async" src="./images/cabinets2.jpg" alt="cabinets" width="400" height="662">
-                 </picture>
-            </div>
-       </section>
+      
 
 
         <!-- ============================================ -->
@@ -169,58 +372,99 @@
         <!-- ============================================ -->
 
         <section id="services" class="services">
-            <!-- Get Icons From flaticon.com -->
             <div class="card">
                 <picture>
-                    <img aria-hidden="true" decoding="async" src="./images/diagnostics.jpg" alt="engine diagnostics" width="48" height="48">
+                    <img aria-hidden="true" decoding="async" src="./images/replacement.jpg" alt="engine replacement" width="48" height="48">
                 </picture>
-                <h2>Engine Diagnostics</h2>
+                <div class="card-text">
+                <h2>Engine Replacement</h2>
                 <p>
-                    Comprehensive engine checks to identify and fix issues promptly, ensuring your car runs smoothly.
+                    Professional engine replacement services using both new and used engines to suit your needs.
                 </p>
+                </div>
             </div>
             <div class="card">
                 <picture>
-                    <img aria-hidden="true" decoding="async" src="./images/brake.jpg" alt="brake repair" width="48" height="48">
+                    <img aria-hidden="true" decoding="async" src="./images/electric.jpg" alt="electrical repair" width="48" height="48">
                 </picture>
-                <h2>Brake Repair</h2>
+                <div class="card-text">
+                <h2>Electrical Repair</h2>
                 <p>
-                    Expert brake repair and maintenance services to keep you safe on the road.
+                    Expert vehicle electrical repair services to ensure your car's electrical systems are functioning properly.
                 </p>
+            </div>
             </div>
             <div class="card">
                 <picture>
                     <img aria-hidden="true" decoding="async" src="./images/oil.jpg" alt="oil change" width="48" height="48">
                 </picture>
+                <div class="card-text">
                 <h2>Oil Changes</h2>
                 <p>
-                    Regular oil changes and tune-ups to maintain optimal vehicle performance.
+                    Regular oil changes and tune-ups to maintain optimal vehicle performance and extend engine life.
                 </p>
             </div>
+            </div>
+            <div class="card">
+                <picture>
+                    <img aria-hidden="true" decoding="async" src="./images/tires.jpg" alt="New Tires / Balance & Mount" width="48" height="48">
+                </picture>
+                <div class="card-text">
+                <h2>New Tires / Balance & Mount</h2>
+                <p>
+                    Professional tire installation, balancing, and mounting services to ensure a safe and smooth ride.
+                </p>
+            </div>
+            </div>
         </section>
+        
 
         <!-- ============================================ -->
-        <!--          Extra Content For Ranking           -->
+        <!--          Diesel Trucks Services             -->
         <!-- ============================================ -->
 
         <section id="sidebyside-reverse-one">
             <div class="container">
                 <div class="content">
-                    <h2 class="title">Expert Engine Diagnostics and Repair Services</h2>
-                        <p>
-                            At our auto repair shop, we specialize in providing comprehensive engine diagnostics and repair services. Our skilled technicians use state-of-the-art equipment to accurately identify and fix any issues, ensuring your vehicle runs smoothly and efficiently.
-                        </p>
-                        <p>
-                            Whether it's a minor adjustment or a major repair, we have the expertise to handle all your engine needs. Our commitment to quality and customer satisfaction means you can trust us to keep your car in top condition, minimizing downtime and maximizing performance.
-                        </p>
+                    <h2 class="title">We Service <br> Diesel Trucks</h2>
+                    <p>
+                        We offer specialized services for diesel trucks, including brands like FORD, DODGE, GMC, CHEVROLET, and others. Whether it's engine repair, transmission work, or general maintenance, our experienced team can handle it all.
+                    </p>
+                    <p>
+                        We understand the unique needs of diesel engines and are equipped with the right tools and expertise to provide top-quality service. Trust us to keep your truck running at its best.
+                    </p>
 
-                     <a class="button-solid" href="./contact.html">Get Free Quote</a>
+                     <a class="button-solid" href="#form">Get Free Quote</a>
                 </div>
                 <div class="image-box">
-                    <iframe src="https://www.youtube.com/embed/C5CGCJLS8QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img src="./images/truck.jpg" alt="Diesel Trucks Service" width="600" height="400">
                 </div>
             </div>
        </section>
+
+    <!-- ============================================ -->
+<!--     Insurance & Extended Warranty Services   -->
+<!-- ============================================ -->
+
+<section id="sidebyside">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">We Accept All Insurance & Extended Warranty Plans</h2>
+            <p>
+                At Auto Maia Repair, we make the process of getting your vehicle repaired easy and hassle-free by working directly with all insurance and extended warranty providers. Whether it's a minor repair or a major overhaul, we've got you covered.
+            </p>
+            <p>
+                Our team handles everything from start to finish, ensuring that your claims are processed smoothly, and that you get back on the road as quickly as possible. Trust us to manage the paperwork, so you can focus on what matters most.
+            </p>
+
+            <a class="button-solid" href="#form">File a Claim</a>
+        </div>
+        <div class="image-box">
+            <img src="./images/insurance.jpg" alt="Insurance and Warranty Services" width="600" height="400">
+        </div>
+    </div>
+</section>
+
 
        <section id="portfolio">
             <div class="container">
@@ -281,99 +525,6 @@
             </div>
         </section>
 
-          <!-- ============================================ -->
-        <!--                  Reviews                     -->
-        <!-- ============================================ -->
-
-        <section id="reviews">
-            <div class="container">
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">B Miller<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Vincent M.<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                         <span class="name">Alex L.<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile-woman.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Arrieana M.<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                        <span class="name">Leo N.<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-                <div class="review">
-                    <picture>
-                        <img class="profile" loading="lazy" decoding="async" src="./images/profile.svg" alt="" width="99" height="99">
-                     </picture>
-                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                     </p>
-                     <div class="star-group">
-                         <span class="name">Brian A.<span class="desc">Client</span></span>
-                         <picture>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/stars.svg" alt="stars" width="91" height="15">
-                         </picture>
-                     </div>
-                </div>
-            </div>
-        </section>
-
 
 
          <!-- ============================================ -->
@@ -383,61 +534,25 @@
         <section id="form">
             <div class="left-section">
                 <h2 class="title">Send a Message</h2>
-                <p>If you have any questions or concerns please feel free to reach out to us.  We respond to every call and email.</p>
-                <form id="contact" name="Contact Form2" method="post" data-netlify="true">
-                        <div class="input-group">
-                            <label for="name">Full Name</label>
-                            <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" tabindex="1" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-
-                        <div class="input-group">
-                            <label for="email">Email</label>
-                            <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-
-                        <div class="input-group">
-                            <label for="phone">Phone</label>
-                            <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-                        <div class="input-group">
-                            <label for="location">Location</label>
-                            <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-                        <div class="input-group">
-                            <label for="how">How did you hear about us</label>
-                            <input id="how" aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-                        <div class="input-group textarea">
-                            <label for="message">Message</label>
-                            <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us about what you need help with" tabindex="6" required></textarea>
-                            <div aria-hidden="true" class="hover-box"></div>
-                        </div>
-                    <p class="form-submit">
-                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
-                    </p>
-                </form>
+                <p>If you have any questions or concerns, please feel free to reach out to us. We respond to every call and email.</p>
+                <img src="./images/portfolio/contact.jpg" alt="Contact Us" width="600" height="400">
             </div>
             <div class="contact-right">
                 <div class="info-group">
                     <span class="heading">Location</span>
-                    <span class="info">Denver, CO</span>
+                    <span class="info">Pompano Beach, FL</span>
                 </div>
                 <div class="info-group">
                     <span class="heading">Phone</span>
-                    <a class="info" href="tel:555-779-4407">(555) 779-4407</a>
+                    <a class="info" href="tel:754-235-4066">(754) 235-4066</a>
                 </div>
                 <div class="info-group">
                     <span class="heading">Email</span>
-                    <a class="info" href="mailto:email@email.com">Click to Email</a>
+                    <a class="info" href="mailto:automaiacorp@gmail.com">Click to Email</a>
                 </div>
                 <div class="info-group">
                     <span class="heading">Hours</span>
-                    <span class="info last">Mon to Fri: 8am to 6pm</span>
+                    <span class="info last">Mon to Fri: 8am to 6pm<br>Sat: 8:30am to 2:00pm<br>Sun: Closed</span>
                 </div>
             </div>
         </section>
@@ -462,23 +577,23 @@
                     <ul>
                         <li><h2>Information</h2></li>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html#sidebyside">About Us</a></li>
-                        <li><a href="./index.html#portfolio">Projects</a></li>
-                        <li><a href="./index.html#reviews">Reviews</a></li>
+                        <li><a href="./index.html#choose">Services</a></li>
+                        <li><a href="./index.html#portfolio">Our Work</a></li>
                         <li><a href="./index.html#form">Contact</a></li>
                     </ul>
                     <ul>
                         <li><h2>Services</h2></li>
-                        <li>Service1</li>  
-                        <li>Service2</li>
-                        <li>Service4</li>
-                        <li>Service5</li>
+                        <li>Brake Services</li>  
+                        <li>Engine Repair or <br> Replace</li>
+                        <li>Tire Services</li>
+                        <li>Transmission Repair</li>
+                        <li>Body Work & Repair</li>
                     </ul>
                     <ul>
                         <li><h2>Contact</h2></li>
-                        <li><a href="./index.html#form">First Address Line<br>Denver CO 80206</a></li>
-                        <li><a href="tel:555-779-4407">T: (555) 779-4407</a></li>
-                        <li><a href="mailto:email@email.com">Click to Email</a></li>
+                        <li><a href="./index.html#form">711 S Dixie Hwy E<br>Pompano Beach, FL <br> 33060</a></li>
+                        <li><a href="tel:754-235-4066">T: (754) 235-4066</a></li>
+                        <li><a href="mailto:automaiacorp@gmail.com">Click to Email</a></li>
                     </ul>
                 </div>
             </div>
@@ -491,7 +606,48 @@
     </footer>
 
 
+
     <script defer src="./nav.js"></script>
+    <script src="./js/jquery.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/appear.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap-select.min.js"></script>
+<script src="./js/isotope.js"></script>
+<script src="./js/jquery.bootstrap-touchspin.js"></script>
+<script src="./js/jquery.countdown.min.js"></script>
+<script src="./js/jquery.countTo.js"></script>
+<script src="./js/jquery.easing.min.js"></script>
+<script src="./js/jquery.enllax.min.js"></script>
+<script src="./js/jquery.fancybox.js"></script>
+<script src="./js/jquery.mixitup.min.js"></script>
+<script src="./js/jquery.paroller.min.js"></script>
+<script src="./js/jquery.polyglot.language.switcher.js"></script>
+<script src="./js/map-script.js"></script>
+<script src="./js/nouislider.js"></script>
+<script src="./js/owl.js"></script>
+<script src="./js/timePicker.js"></script>   
+<script src="./js/validation.js"></script>
+<script src="./js/wow.js"></script>
+<script src="./js/jquery.magnific-popup.min.js"></script>
+<script src="./js/slick.js"></script>
+<script src="./js/lazyload.js"></script>
+<script src="./js/scrollbar.js"></script>
+<script src="./js/tilt.jquery.js"></script>
+<script src="./js/jquery.bxslider.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/parallax.min.js"></script>
+<script src="./js/jquery.tinyscrollbar.js"></script>
+<script src="./js/jQuery.style.switcher.min.js"></script>
+<script src="./js/pagenav.js"></script>
+<!-- thm custom script -->
+<script src="./js/custom.js"></script>
+
+<script src="./js/map-script.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
+</script>
+
     <!--
         This script adds a class to the body after scrolling 100px
         and we used these body.scroll styles to create some on scroll 
@@ -507,6 +663,8 @@
             }
         });
     </script>
+
+    <div id="ptTimeSelectCntr" class style="display: none;">
 
 </body>
 </html>

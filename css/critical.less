@@ -8,8 +8,8 @@
 
     #hero {
         font-size: inherit;
-        padding-bottom: 270/16em;
-        padding-top: 150/16em;
+        padding-bottom: 50/16em;
+        padding-top: 50/16em;
         position: relative;
         z-index: 1;
 
@@ -25,6 +25,7 @@
         }
 
         picture {
+            display: none;
             position: absolute;
             top: 0;
             left: 0;
@@ -50,23 +51,20 @@
             text-align: center;
         }
 
-        .hero-content {
-            padding: 0;
-        }
-
         .heroText {
             width: 100%;
             max-width: 610/16em;
+            height: 100%;
             margin: auto;
             padding: 28/16em;
-            background-color: rgba(26, 26, 26, 0.4); // Changed to RGBA for opacity control
+            background-color: rgba(0, 0, 0, 0.9);
             align-items: center;
             justify-content: center;
         }
 
         h1 {
             font-weight: bold;
-            font-size:~"min(12vw, 4em)";
+            font-size:~"min(10vw, 3em)";
             color: #fff;
             text-align: left;
             line-height: 77/64;
@@ -82,7 +80,7 @@
                 display: block;
                 height: 4/64em;
                 width: 97/64em;
-                background: var(--primary);
+                background: #004883;
                 opacity: 1;
                 bottom: -16/64em;
                 left: 50%;
@@ -101,10 +99,40 @@
             opacity: 1;
         }
 
+        .hero-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 18/16em;
+            line-height: 1.55;
+            color: #fff;
+            text-align: left;
+            margin-bottom: 31/16em;
+
+            li {
+                margin-bottom: 10/16em;
+                display: flex;
+                align-items: center;
+                color: #d5282b;
+                font-size: 18/16em;
+
+                .flags {
+                    display: inline-block;
+                    margin-left: 10/16em;
+
+                    img {
+                        margin-right: 5/16em;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+
         .button-solid {
             align-items: center;
             width: auto;
             margin-bottom: 16/16em;
+            font-size: 12/16em;
         }
     }
     
@@ -118,10 +146,44 @@
         z-index: 1;
         overflow: hidden;
 
+        picture {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -11;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
         .hero-content {
             display: flex;
             justify-content: space-between;
             position: relative;
+        }
+
+        .button-solid {
+            align-items: center;
+            width: auto;
+            margin-bottom: 16/16em;
+            font-size: 16/16em;
+        }
+
+        h1{
+            font-size: 42/16em;
+        }
+
+        p {
+            font-size: 22/16em;
         }
     }
 }
@@ -130,8 +192,8 @@
 @media only screen and (min-width: 1300px) {
 
     #hero {
-        padding-top: 273/16em;
-        padding-bottom: 307/16em;
+        padding-top: 160/16em;
+        padding-bottom: 220/16em;
         background: url("../images/landing.jpg");
 		background-size: cover;
 		background-position: center;
@@ -141,9 +203,377 @@
         picture {
             display: none;
         }
+
+        h1 {
+            font-size: 42/16em;
+        }
+
+        .button-solid {
+            align-items: center;
+            width: auto;
+            margin-bottom: 16/16em;
+            font-size: 16/16em;
+        }
     }
 }
 
+/*-- -------------------------- -->
+<---          Choose Us          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 { 
+        margin-top: 22/16em;
+        font-size: 32/16em;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 8/16em;
+    }
+
+    h4 {
+        font-size: 24/16em;
+        color: #d5282b;
+    }
+    
+    .choose-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        background-color: black;
+        margin-bottom: 60/16em;
+        padding-bottom: 60/16em;
+        padding-top: 60/16em;
+
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 280/16em;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 25/16em;
+                width: 100%;
+
+                picture {
+                    justify-content: flex-end;
+                    padding: 8/16em;
+                }
+                
+                h2 {
+                    font-size: 24/16em;
+                    color: white;
+                    margin-bottom: 10/16em;
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+
+                p {
+                    color: white;
+                    text-align: left;
+                    opacity: .7;
+                    font-size: 16/16em;
+                }
+            }
+
+            .info-two {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 25/16em;
+                width: 100%;
+
+                picture {
+                    justify-content: flex-start;
+                }
+                
+                h2 {
+                    font-size: 24/16em;
+                    color: white;
+                    margin-bottom: 10/16em;
+                    text-align: left;
+                    justify-content: flex-start;
+                }
+
+                p {
+                    color: white;
+                    text-align: left;
+                    opacity: .7;
+                    font-size: 16/16em;
+                }
+            }
+        }
+
+        .car-image {
+            display: none;
+            animation: float 4s ease-in-out infinite;
+            img {
+                display: none;
+                margin: auto;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-70px);
+            }
+        }
+    }
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+    .choose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 { 
+            margin-top: 42/16em;
+            font-size: 48/16em;
+            color: #fff;
+        }
+    
+        h4 {
+            font-size: 24/16em;
+            color: #d5282b;
+        }
+        
+        .choose-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            background-color: black;
+            margin-bottom: 120/16em;
+            padding-bottom: 120/16em;
+            padding-top: 120/16em;
+    
+    
+            .row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 200/16em;
+    
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    margin-bottom: 25/16em;
+                    width: 100%;
+    
+                    picture {
+                        justify-content: flex-end;
+                    }
+                    
+                    h2 {
+                        font-size: 20/16em;
+                        color: white;
+                        margin-bottom: 10/16em;
+                        text-align: right;
+                        justify-content: flex-end;
+                    }
+    
+                    p {
+                        color: white;
+                        text-align: right;
+                        opacity: .7;
+                        font-size: 18/16em;
+                    }
+                }
+    
+                .info-two {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-bottom: 25/16em;
+                    width: 100%;
+    
+                    picture {
+                        justify-content: flex-start;
+                    }
+                    
+                    h2 {
+                        font-size: 20/16em;
+                        color: white;
+                        margin-bottom: 10/16em;
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+    
+                    p {
+                        color: white;
+                        text-align: left;
+                        opacity: .7;
+                        font-size: 18/16em;
+                    }
+                }
+            }
+    
+            .car-image {
+                display: block;
+                animation: float 4s ease-in-out infinite;
+                width: 220/16em;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+    
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(270px);
+                }
+                50% {
+                    transform: translateY(-270px);
+                }
+            }
+        }
+        }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 64em) {
+    .choose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 { 
+            margin-top: 42/16em;
+            font-size: 48/16em;
+            color: #fff;
+        }
+    
+        h4 {
+            font-size: 24/16em;
+            color: #d5282b;
+        }
+        
+        .choose-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            background-color: black;
+            margin-bottom: 120/16em;
+            padding-bottom: 120/16em;
+            padding-top: 120/16em;
+    
+    
+            .row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 280/16em;
+    
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    margin-bottom: 25/16em;
+                    width: 100%;
+    
+                    picture {
+                        justify-content: flex-end;
+                    }
+                    
+                    h2 {
+                        font-size: 24/16em;
+                        color: white;
+                        margin-bottom: 10/16em;
+                        text-align: right;
+                        justify-content: flex-end;
+                    }
+    
+                    p {
+                        color: white;
+                        text-align: right;
+                        opacity: .7;
+                        font-size: 16/16em;
+                    }
+                }
+    
+                .info-two {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    margin-bottom: 25/16em;
+                    width: 100%;
+    
+                    picture {
+                        justify-content: flex-start;
+                    }
+                    
+                    h2 {
+                        font-size: 24/16em;
+                        color: white;
+                        margin-bottom: 10/16em;
+                        text-align: left;
+                        justify-content: flex-start;
+                    }
+    
+                    p {
+                        color: white;
+                        text-align: left;
+                        opacity: .7;
+                        font-size: 16/16em;
+                    }
+                }
+            }
+    
+            .car-image {
+                display: block;
+                animation: float 4s ease-in-out infinite;
+                width: 260/16em;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+    
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(70px);
+                }
+                50% {
+                    transform: translateY(-70px);
+                }
+            }
+        }
+        }
+}
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
@@ -166,28 +596,37 @@
         .card {
             display: block;
             width: 100%;
-            max-width: 357/16em;
+            max-width: 320/16em;
             margin: auto;
             margin-bottom: 50/16em;
+            border: none;
+            transition: transform 0.3s ease; /* Add transition for smooth hover effect */
             &:last-of-type {
                 margin-bottom: 0;
             }
+            &:hover {
+                transform: none; /* Scale the card slightly on hover */
+            }
 
             picture {
-                background: var(--primary);
-                width: 268/16em;
-                height: 268/16em;
+                background: #d5282b;
+                width: 228/16em;
+                height: 228/16em;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin: auto;
                 margin-bottom: 23/16em;
-                border-radius: 5%;
+                
+                transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+
+                &:hover {
+                    transform: none; /* Scale the image slightly on hover */
+                }
 
                 img {
-                    width: 98%;
-                    height: 98%;
-                    border-radius: 5%;
+                    width: 99%;
+                    height: 99%;
                 }
             }
             h2 {
@@ -213,13 +652,45 @@
     .services {
         font-size:~"min(1.8vw, 1em)";
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 98%;
+        width: 100%;
 
         .card {
             margin: 0;
-            max-width: 325/16em;
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+
+            picture {
+                background: #d5282b;
+                width: 268/16em;
+                height: 268/16em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 23/16em;
+            }
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                max-width: 50%;
+                align-items: flex-start;
+
+                h2 {
+                    text-align: left;
+                    font-size: 32/16em;
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 24/16em;
+                }
+            }
         }
     }
 }
@@ -227,10 +698,50 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
     .services {
-        padding: 50/16em 80/16em;
+        padding: 20/16em 40/16em;
+        display: flex;
+        flex-direction: row;
 
         .card {
-            max-width: 357/16em;
+            max-width: 275/16em;
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                transform: scale(1.00); /* Scale the card slightly on hover */
+            }
+
+            picture {
+                background: #d5282b;
+                width: 268/16em;
+                height: 268/16em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 23/16em;
+                
+                transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+
+                &:hover {
+                    transform: scale(1.05); /* Scale the image slightly on hover */
+                }
+            }
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                align-items: flex-start;
+
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    text-align: left;
+                }
+            }
         }
     }
 }
