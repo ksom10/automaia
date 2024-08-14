@@ -507,6 +507,9 @@
 @media only screen and (min-width: 1300px) {
   #sidebyside-reverse-one {
     padding: 9.375em 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/diesel.jpg);
+    background-size: cover;
+    background-position: center;
   }
   #sidebyside-reverse-one .container {
     max-width: 75em;
