@@ -1,7 +1,1 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="" stroke="">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd"> <path d="m0 0h32v32h-32z"/> <path d="m23 17v1c0 3.4836886 1.6299243 6.6925042 4.3415908 8.7567524l.2657779.1961637.8132971.5818486-1.1636973 1.6265942-.8132971-.5818486c-3.2931625-2.3559929-5.325229-6.1091405-5.4386588-10.2162282l-.0050126-.3632821v-1zm-12 0v1c0 4.1222573-1.93349498 7.9221443-5.14569975 10.3599231l-.28673163.2115368-.81267957.5827108-1.16542166-1.6253591.81267957-.5827108c2.77556346-1.9901459 4.48845003-5.1491452 4.59279493-8.610242l.00505811-.3358588v-1zm6 0v12h-2v-12zm15-15v14h-32v-14zm-4 8h-24v2h24z" fill="#d5282b"/> </g> </g>
-</svg>
+<svg width="800" height="800" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h32v32H0z"/><path d="M23 17v1a10.98 10.98 0 0 0 4.342 8.757l.265.196.814.582-1.164 1.626-.813-.581a12.982 12.982 0 0 1-5.439-10.217L21 18v-1zm-12 0v1a12.98 12.98 0 0 1-5.146 10.36l-.286.211-.813.583-1.166-1.625.813-.583a10.982 10.982 0 0 0 4.593-8.61L9 18v-1zm6 0v12h-2V17zM32 2v14H0V2zm-4 8H4v2h24z" fill="#d5282b"/></g></svg>
