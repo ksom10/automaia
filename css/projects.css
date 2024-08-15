@@ -163,10 +163,6 @@
     display: block;
     height: 69.25em;
     width: 125em;
-    background: url("../images/cta-squares.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     opacity: 1;
     bottom: 0;
     left: 50%;

@@ -90,9 +90,7 @@ a:focus {
     outline: none;
     border: none;
 }
-img.lazy-image{
-	background:url(../images/icon/image-bg.svg) center center no-repeat;	
-}
+
 img.lazy-image.loaded{
 	background-image:none;
 }
@@ -143,7 +141,6 @@ img.lazy-image.loaded{
     width: 10px;
 }
 #scrollbar1 .track {
-    background: url(../images/icon/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
     height: 100%;
     width: 10px;
     position: relative;
@@ -151,8 +148,6 @@ img.lazy-image.loaded{
 }
 
 #scrollbar1 .thumb {
-    background: url(../images/icon/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
-    background-image: none;
     height: 20px;
     width: 10px;
     cursor: pointer;
@@ -665,10 +660,6 @@ li{
     width: 100%;
     min-width: 300px;
     margin: 0 auto;
-    background: url(../images/pattern/body-pattern.png) #f8f8f8;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
     overflow-x:hidden;
 }
 
@@ -753,13 +744,8 @@ li{
     height:100%; 
     z-index:999999999999999999; 
     background-color:#ffffff; 
-    background-position:center center; 
-    background-repeat:no-repeat; 
-    background-image:url(../images/icon/preloader.gif);
 }
-.preloader.style-two {
-    background-image: url(../images/icon/preloader-1.gif);
-}
+
 
 
 
