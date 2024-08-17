@@ -1466,11 +1466,19 @@ select:focus {
     position: relative;
     display: block;
 }
+
 .header-top-left .logo {
     position: relative;
     display: block;
     float: left;
     padding: 3px 0 4px;
+}
+
+@media only screen and (min-width: 1300px) {
+    .header-top-left .logo {
+        height: 220px;
+        margin-left: 80px;
+    }
 }
 .header-top-left .logo a{
     position: relative;

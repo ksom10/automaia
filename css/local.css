@@ -486,7 +486,6 @@
     margin: auto;
     width: 50.6875em;
     height: 35.0625em;
-    border-top-left-radius: 55%;
     font-size: min(1.4vw, 1em);
   }
   #sidebyside-reverse-one .image-box iframe {
@@ -535,10 +534,12 @@
     margin: 0;
     margin-left: 10.625em;
     order: 2;
-    width: 38.1875em;
-    height: 35.0625em;
+    width: 50.6875em;
+    height: 28.8125em;
   }
-  #sidebyside-reverse-one .image-box iframe {
-    border-radius: 2%;
+  #sidebyside-reverse-one .image-box img {
+    margin-top: 4em;
+    height: 100%;
+    width: 100%;
   }
 }

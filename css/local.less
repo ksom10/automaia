@@ -560,7 +560,6 @@
             margin: auto;
             width: 811/16em;
             height: 561/16em;
-            border-top-left-radius: 55%;
             font-size: ~"min(1.4vw, 1em)"; // scales the image-box down
         
             iframe {
@@ -617,11 +616,13 @@
             margin: 0;
             margin-left: 170/16em;
             order: 2;
-            width: 611/16em;
-            height: 561/16em;
+            width: 811/16em;
+            height: 461/16em;
         
-            iframe {
-                border-radius: 2%; // Match the container's border-radius
+            img {
+                margin-top: 64/16em; // Match the container's border-radius
+                height: 100%;
+                width: 100%;
             }
         }
     }
