@@ -485,7 +485,8 @@
     position: relative;
     margin: auto;
     width: 50.6875em;
-    height: 35.0625em;
+    height: 41.3125em;
+    margin-bottom: 7.5em;
     font-size: min(1.4vw, 1em);
   }
   #sidebyside-reverse-one .image-box iframe {
@@ -535,7 +536,8 @@
     margin-left: 10.625em;
     order: 2;
     width: 50.6875em;
-    height: 28.8125em;
+    height: 41.3125em;
+    background-color: rgba(128, 128, 128, 0.4);
   }
   #sidebyside-reverse-one .image-box img {
     margin-top: 4em;
