@@ -421,7 +421,7 @@
 @media only screen and (min-width: 0em) {
   #sidebyside-reverse-one {
     padding: 50px 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/diesel.jpg);
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8)), url(../images/diesel.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -443,7 +443,7 @@
   #sidebyside-reverse-one .content h2 {
     font-size: 2.25em;
     margin-bottom: 0.875em;
-    color: #fff;
+    color: #000;
     position: relative;
     /* Ensure the pseudo-element is positioned relative to the h2 */
   }
@@ -460,7 +460,7 @@
   }
   #sidebyside-reverse-one .content p {
     margin-bottom: 1.11111111em;
-    color: #fff;
+    color: #000;
   }
   #sidebyside-reverse-one .content ul {
     padding-left: 1.25em;
@@ -486,7 +486,7 @@
     margin: auto;
     width: 50.6875em;
     height: 41.3125em;
-    margin-bottom: 7.5em;
+    margin-bottom: 12.5em;
     font-size: min(1.4vw, 1em);
   }
   #sidebyside-reverse-one .image-box iframe {
@@ -507,7 +507,7 @@
 @media only screen and (min-width: 1300px) {
   #sidebyside-reverse-one {
     padding: 9.375em 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/diesel.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/diesel.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -531,13 +531,17 @@
     position: relative;
     /* Ensure the pseudo-element is positioned relative to the h2 */
   }
+  #sidebyside-reverse-one .content p {
+    color: #fff;
+  }
   #sidebyside-reverse-one .image-box {
     margin: 0;
     margin-left: 10.625em;
     order: 2;
     width: 50.6875em;
     height: 41.3125em;
-    background-color: rgba(128, 128, 128, 0.4);
+    border: solid 3px #000;
+    background-color: rgba(128, 128, 128, 0.7);
   }
   #sidebyside-reverse-one .image-box img {
     margin-top: 4em;
