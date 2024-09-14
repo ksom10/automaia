@@ -667,3 +667,28 @@
     font-weight: bold;
   }
 }
+@media only screen and (min-width: 0em) {
+  .google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .google img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 1300px) {
+  .google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .google img {
+    max-width: 60%;
+    height: auto;
+  }
+}
